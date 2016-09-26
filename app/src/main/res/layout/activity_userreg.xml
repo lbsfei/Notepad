@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <ImageView
+            android:id="@+id/toolbar_login"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/login"
+            android:layout_gravity="left|start"
+            />
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="笔记"
+            android:textColor="#F8F8FF00"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入用户名"
+        android:selectAllOnFocus="true"
+        />
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:password="true"
+        android:selectAllOnFocus="true"
+        />
+    <EditText
+        android:id="@+id/et_repwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="确认密码"
+        android:password="true"
+        android:selectAllOnFocus="true"
+        />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text="注册" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="登录" />
+</LinearLayout>

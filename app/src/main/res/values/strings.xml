@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="action_settings">Settings</string>
+    <string name="sync">数据同步</string>
+</resources>
