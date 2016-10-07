@@ -52,11 +52,11 @@ public class AddActivity extends Activity implements OnClickListener {
     private RichTextEditor richText;
     private EditText et_name;
     private TextView tv_back, tv_title, tv_ok;
-    private boolean isKeyBoardUp, isEditTouch;// 鍒ゆ柇杞敭鐩樼殑鏄剧ず涓庨殣钘�
+    private boolean isKeyBoardUp, isEditTouch;
     private File mCameraImageFile;//照相机拍照得到的图片
     private File mVideoFile;
     private FileUtils mFileUtils;
-    private String ROLE = "add";// 褰撳墠椤甸潰鏄柊澧炶繕鏄煡鐪嬭鎯� add/modify
+    private String ROLE = "add";
     //数据库对象
     private NotesDB notesDB;
     private SQLiteDatabase dbWriter;
@@ -83,7 +83,7 @@ public class AddActivity extends Activity implements OnClickListener {
                     richText.setIntercept(false);
                 } else {
 //                    Log.i(TAG, "---richtext-data:" + richText.getRichEditData());
-//                    Toast.makeText(context, "淇℃伅宸叉墦鍗�,璇峰埌鎺у埗鍙版煡鐪�", Toast.LENGTH_LONG)
+//                    Toast.makeText(context, "start", Toast.LENGTH_LONG)
 //                            .show();
                     //richtext-data:{text=如, videoUrls=[/storage/emulated/0/AndroidImage/VIDEO_2016_09_24_19_38_41.mp4], imgUrls=[/storage/emulated/0/AndroidImage/IMG_2016_09_24_19_40_05.jpg]}
                     String title = et_name.getText().toString().trim();
